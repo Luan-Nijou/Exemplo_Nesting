@@ -1,0 +1,45 @@
+// styles.scss (ou styles.sass para sintaxe Sass)
+// Importe o Bootstrap (ou qualquer outro framework CSS) aqui se necessário
+
+$primary-color: #3498db; // Definindo uma cor personalizada
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            &:before {
+                content: "\2022"; // Adicionando um marcador de lista personalizado
+                color: $primary-color;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+
+    button.btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        &:hover {
+            background-color: darken($primary-color, 10%);
+            border-color: darken($primary-color, 10%);
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.container h1 {
+  color: #3498db;
+}
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+.container ul li:before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.container .primary-button {
+  background-color: #27ae60;
+  border-color: #27ae60;
+  color: white;
+}
+.container .primary-button:hover {
+  background-color: #1e8449;
+  border-color: #1e8449;
+}
+
+.aumentar-imagem {
+  max-width: 100%; 
+  width: 100%;
+  height: auto;
+}

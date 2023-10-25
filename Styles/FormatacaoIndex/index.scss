@@ -1,0 +1,45 @@
+// styles.scss
+
+// Variáveis
+$primary-color: #3498db;
+$background-color: #f9f9f9;
+
+// Estilos globais
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: $background-color;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    .carousel-inner {
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+    .navbar {
+        background-color: $primary-color;
+        .navbar-brand, .nav-link {
+            color: white;
+            &:hover {
+                color: lighten($primary-color, 10%);
+            }
+        }
+    }
+
+    .card-footer {
+        background-color: $background-color;
+        border-top: 1px solid #ddd;
+        color: #777;
+    }
+}

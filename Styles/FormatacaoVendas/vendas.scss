@@ -1,0 +1,50 @@
+// vendas.scss
+
+// Variáveis
+$primary-color: #3498db;
+$background-color: #f9f9f9;
+$button-color: #27ae60;
+
+// Mixin para estilos de botão
+@mixin button-styles($color) {
+    background-color: $color;
+    border-color: $color;
+    color: white;
+    &:hover {
+        background-color: darken($color, 10%);
+        border-color: darken($color, 10%);
+    }
+}
+
+// Estilos para a página de vendas
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: $background-color;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            &:before {
+                content: "\2022";
+                color: $primary-color;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+
+    // Usando o mixin de botão
+    .primary-button {
+        @include button-styles($button-color);
+    }
+}

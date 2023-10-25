@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.container h1 {
+  color: #3498db;
+}
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+.container ul li:before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.container button.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+.container button.btn-primary:hover {
+  background-color: #217dbb;
+  border-color: #217dbb;
+}/*# sourceMappingURL=oficina.css.map */
